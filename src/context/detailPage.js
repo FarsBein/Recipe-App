@@ -1,6 +1,6 @@
 import React,{useEffect,useState,useContext} from 'react';
 import { RecipeContext } from '../context/RecipeApiContext';
-
+import HomePage from '../component/HomePage';
 const DetailPage = ({match}) => {
     const [id,setId] = useState({
         id:  parseFloat(match.params.id),
@@ -8,7 +8,6 @@ const DetailPage = ({match}) => {
     })
     const context = useContext(RecipeContext)
     console.log(context)
-    console.log(match.params.id)
     
     const findRecipe = () => {
         context.recipes.map(
@@ -28,10 +27,13 @@ const DetailPage = ({match}) => {
     },[])
     console.log(id)
     return (
-            <div className='App'>
-                <h1>{id.recipe.label}</h1>
-
+            <div>
+                <div className='App'>
+                    <h1>{id.recipe.label}</h1>
+                    {/* <img src={id.recipe.Image} /> */}
+                </div>                
             </div>
+
     );
 }
 

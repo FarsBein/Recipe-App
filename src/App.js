@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import HomePage from './component/HomePage'
 import RecipeCards from './component/RecipeCards';
 

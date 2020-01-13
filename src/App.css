@@ -24,6 +24,44 @@
   color: white;
 }
 
+.searchButton {
+  background-color: #282c34;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+.searchButton:hover {
+  background-color: rgb(255, 255, 255); /* Green */
+  color: rgb(0, 0, 0);
+}
+
+input.searchBar {
+  color: #000;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+
+.recipe {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 10px;
+  color:white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-color: #282c34;
+}
+
+.recipe:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+
 .App-link {
   color: #61dafb;
 }
